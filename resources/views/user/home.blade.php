@@ -150,6 +150,36 @@
             text-decoration: underline
         }
 
+        .body .menu2 {
+            height: 100vh;
+            width: 250px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            position: fixed;
+            left: 0px;
+            top: 60px;
+            z-index: 9000;
+            padding-top: 20px;
+            padding-left: 30px
+        }
+
+        .body .menu2 button {
+            margin-bottom: 30px;
+            margin-top: 20px;
+            background-color: transparent;
+            outline: none;
+            border: 0px;
+            font-family: "Futura Md";
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        
+        .menu2 button a {
+            text-decoration: none;
+            color: black;
+        }
+
         .body #completeReg {
             display: block;
             background-color: white;
@@ -191,96 +221,25 @@
             border-bottom: 2px solid red;
         }
 
-        @media(max-width:915px){
-            .body .menu {
-               overflow-y: scroll
-            }
-            .body .menu button{
-            margin-top: 10px;
-              margin-bottom: 50px;
-            }
-            .body #completeReg input {
-            width: 350px;
-           
-        }
-        }
-
         @media(max-width:912px){
             .header {
-                padding-left: 60px;
-                padding-right: 60px;
-            }
-
-            .header .left {
-                display: none;
-            }
-
-            .header .right {
-                width: 100%;
-                margin-top: 30px;
-            }
-
-            .header .right h2 {
-                width: 100%;
-                font-size: 23px;
-            }
-
-            .header .right i {
-                margin-top: -18px;
-                font-size: 33px;
-            }
-
-            .body .menu {
-                display: none;
-            }
-
-            .body .menu2 {
-                height: 100vh;
-                width: 350px;
-            }
-            .body .menu2 button{
-                margin-top: 35px;
-                margin-bottom: 35px;
-            }
-            .body .menu2 a {
-                font-size: 28px;
-            }
-            .header .right i {
-                display: inherit;
-            }
-            .body .content {
             width: 100%;
-            height: 100%;
-            background-color: transparent;
-            margin-left: 0px;
-            position: absolute;
-            top: 0px;
-            padding: 20px;
-            font-size: 23px;
-            text-align: justify;
-        }
-        .body .content .picture {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
             align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
         }
-        .body .content .picture div {
-            width: 250px;
-            height: 250px;
-            margin-right: 0px;
-            margin-bottom: 150px;
-            text-align: right;
-        }
-        }
-        @media(max-width:896px) {
-            .header {
-                padding-left: 60px;
-                padding-right: 60px;
-            }
 
-            .header .left {
+
+        .header .left {
                 display: none;
             }
 
@@ -291,69 +250,1033 @@
 
             .header .right h2 {
                 width: 100%;
-                font-size: 23px;
+                font-size: 17px;
+                margin-top: -15px !important;
             }
 
             .header .right i {
                 margin-top: -18px;
-                font-size: 33px;
+                font-size: 23px;
             }
 
             .body .menu {
                 display: none;
             }
+
             .body .menu2 {
                 height: 100vh;
-                width: 350px;
-                overflow-y: scroll;
+                width: 100%;
             }
-            .body .menu2 button{
-                margin-top: 17px;
-                margin-bottom: 17px;
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
             }
+
             .body .menu2 a {
                 font-size: 22px;
             }
+
             .header .right i {
                 display: inherit;
             }
-            .profile {
-            position: absolute;
-            right: 20px;
-            top: 10px;
+
+        .body {
+            width: 100%;
         }
 
-        .profile2 {
-            position: absolute;
-            right: 50px;
-            top: 29px;
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
         }
 
-        .profile2 img {
-            width: 60px;
-            height: 60px;
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
             border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
         }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
+        }
+
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
+        }
+
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 80%;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 80px;
+        }
+
+        .body #completeReg span {
+            font-weight: bold;
+        }
+
         .body #completeReg input {
             outline: none;
-            width: 350px;
+            width: 100%;
             padding: 4px;
             margin-right: 43px;
-            margin-bottom: 20px;
             border: none;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
         }
         #complete{
-            margin-bottom: 20px;
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+        }
+        }
+        @media(max-width:1180px){
+            .header {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
+
+
+        .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 100%;
+                font-size: 17px;
+                margin-top: -15px !important;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .header .right i {
+                display: inherit;
+            }
+
+        .body {
+            width: 100%;
+        }
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
+        }
+
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
+        }
+
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 40%;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 300px;
+        }
+
+        .body #completeReg span {
+            font-weight: bold;
+        }
+
+        .body #completeReg input {
+            outline: none;
+            width: 100%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
+        }
+        #complete{
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+        }
+        }
+        @media(max-width:1024px){
+            .header {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
+
+
+        .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 100%;
+                font-size: 17px;
+                margin-top: -15px !important;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .header .right i {
+                display: inherit;
+            }
+
+        .body {
+            width: 100%;
+        }
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
+        }
+
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
+        }
+
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 40%;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 300px;
+        }
+
+        .body #completeReg span {
+            font-weight: bold;
+        }
+
+        .body #completeReg input {
+            outline: none;
+            width: 100%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
+        }
+        #complete{
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+        }
+        }
+        @media(max-width:915px){
+            .header {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
+
+
+        .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 100%;
+                font-size: 17px;
+                margin-top: -15px !important;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .header .right i {
+                display: inherit;
+            }
+
+        .body {
+            width: 100%;
+        }
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
+        }
+
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
+        }
+
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 40%;
+            height: 300px;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 300px;
+        }
+
+        .body #completeReg span {
+            font-weight: bold;
+        }
+
+        .body #completeReg input {
+            outline: none;
+            width: 100%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
+        }
+        #complete{
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+        }
+        }
+        @media(max-width:896px){
+            .header {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
+
+
+        .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 100%;
+                font-size: 17px;
+                margin-top: -15px !important;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .header .right i {
+                display: inherit;
+            }
+
+        .body {
+            width: 100%;
+        }
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
+        }
+
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
+        }
+
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 40%;
+            height: 300px;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 150px;
+        }
+
+        .body #completeReg span {
+            font-weight: bold;
+        }
+
+        .body #completeReg input {
+            outline: none;
+            width: 100%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
+        }
+        #complete{
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
         }
         }
         @media(max-width:820px){
             .header {
-                padding-left: 60px;
-                padding-right: 60px;
-            }
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
 
-            .header .left {
+
+        .header .left {
                 display: none;
             }
 
@@ -364,71 +1287,203 @@
 
             .header .right h2 {
                 width: 100%;
-                font-size: 23px;
+                font-size: 17px;
+                margin-top: -15px !important;
             }
 
             .header .right i {
                 margin-top: -18px;
-                font-size: 33px;
+                font-size: 23px;
             }
 
             .body .menu {
                 display: none;
             }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
             .header .right i {
                 display: inherit;
             }
-            .body .content {
+
+        .body {
             width: 100%;
-            height: 100%;
-            background-color: transparent;
-            margin-left: 0px;
-            position: absolute;
-            top: 0px;
-            padding: 20px;
-            font-size: 17px;
-            text-align: justify;
         }
-        .body .content .picture {
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
             width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
-        .body .content .picture div {
-            width: 250px;
-            height: 250px;
-            margin-right: 0px;
-            margin-bottom: 150px;
-            text-align: right;
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
         }
+
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
+        }
+
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 80%;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 80px;
+        }
+
         .body #completeReg span {
-            margin-left: 70px;
+            font-weight: bold;
         }
+
         .body #completeReg input {
+            outline: none;
+            width: 100%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
+        }
+        #complete{
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
             outline: none;
             width: 600px;
             padding: 4px;
-            margin-left: 70px;
-            margin-bottom: 20px;
+            margin-right: 43px;
             border: none;
-            border-bottom: 2px solid #007bff;
-        }
-        #complete{
-            margin-bottom: 20px;
+            border-bottom: 2px solid red;
         }
         }
-      
-       
-
         @media(max-width:700px){
             .header {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
 
-            .header .left {
+
+        .header .left {
                 display: none;
             }
 
@@ -440,6 +1495,7 @@
             .header .right h2 {
                 width: 100%;
                 font-size: 17px;
+                margin-top: -15px !important;
             }
 
             .header .right i {
@@ -450,88 +1506,192 @@
             .body .menu {
                 display: none;
             }
+
             .body .menu2 {
                 height: 100vh;
                 width: 100%;
-                overflow-y: scroll
             }
-            .body .menu2 button{
+
+            .body .menu2 button {
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
+
             .body .menu2 a {
                 font-size: 22px;
             }
+
             .header .right i {
                 display: inherit;
             }
-            .body .content {
+
+        .body {
             width: 100%;
-            height: 100%;
-            background-color: transparent;
-            margin-left: 0px;
-            position: absolute;
-            top: 0px;
-            padding: 20px;
-            font-size: 17px;
-            text-align: justify;
         }
-        .body .content .picture {
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
             width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
-        .body .content .picture div {
-            width: 250px;
-            height: 250px;
-            margin-right: 0px;
-            margin-bottom: 150px;
-            text-align: right;
-        }
-        .profile {
-            position: absolute;
-            right: 20px;
-            top: 10px;
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
         }
 
-        .profile2 {
-            position: absolute;
-            right: 50px;
-            top: 40px;
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
         }
 
-        .profile2 img {
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
+        .body .content p {
+            text-decoration: underline
         }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 80%;
+            height: 200px;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 55px;
+        }
+
         .body #completeReg span {
             font-weight: bold;
-            margin-left: 40px !important;
         }
+
         .body #completeReg input {
             outline: none;
-            width: 400px;
+            width: 100%;
             padding: 4px;
-            margin-left: 40px !important;
-            margin-bottom: 20px;
+            margin-right: 43px;
             border: none;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
         }
         #complete{
-            margin-bottom: 20px;
+           margin-left: 30%;
         }
-        }
-        
-        @media(max-width:540px) {
-            .header {
-                padding-left: 60px;
-                padding-right: 60px;
-            }
 
-            .header .left {
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+        }
+        }
+        @media(max-width:540px){
+            .header {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
+
+
+        .header .left {
                 display: none;
             }
 
@@ -542,39 +1702,203 @@
 
             .header .right h2 {
                 width: 100%;
-                font-size: 23px;
+                font-size: 17px;
+                margin-top: -15px !important;
             }
 
             .header .right i {
                 margin-top: -18px;
-                font-size: 33px;
+                font-size: 23px;
             }
 
             .body .menu {
                 display: none;
             }
+
             .body .menu2 {
                 height: 100vh;
-                width: 350px;
+                width: 100%;
             }
-            .body .menu2 button{
-                margin-top: 17px;
-                margin-bottom: 17px;
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
             }
+
             .body .menu2 a {
                 font-size: 22px;
             }
+
             .header .right i {
                 display: inherit;
             }
+
+        .body {
+            width: 100%;
+        }
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
+        }
+
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
+        }
+
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 80%;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 55px;
+        }
+
+        .body #completeReg span {
+            font-weight: bold;
+        }
+
+        .body #completeReg input {
+            outline: none;
+            width: 100%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
+        }
+        #complete{
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
+        }
         }
         @media(max-width:414px){
             .header {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
 
-            .header .left {
+
+        .header .left {
                 display: none;
             }
 
@@ -586,6 +1910,7 @@
             .header .right h2 {
                 width: 100%;
                 font-size: 17px;
+                margin-top: -15px !important;
             }
 
             .header .right i {
@@ -596,188 +1921,192 @@
             .body .menu {
                 display: none;
             }
+
             .body .menu2 {
                 height: 100vh;
                 width: 100%;
             }
-            .body .menu2 button{
+
+            .body .menu2 button {
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
+
             .body .menu2 a {
                 font-size: 22px;
             }
+
             .header .right i {
                 display: inherit;
             }
-            .body .content {
+
+        .body {
             width: 100%;
-            height: 100%;
-            background-color: transparent;
-            margin-left: 0px;
-            position: absolute;
-            top: 0px;
-            padding: 20px;
-            font-size: 17px;
-            text-align: justify;
         }
-        .body .content .picture {
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
             width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
-        .body .content .picture div {
-            width: 250px;
-            height: 250px;
-            margin-right: 0px;
-            margin-bottom: 150px;
-            text-align: right;
-        }
-        .profile {
-            position: absolute;
-            right: 20px;
-            top: 10px;
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
         }
 
-        .profile2 {
-            position: absolute;
-            right: 50px;
-            top: 40px;
-        }
-
-        .profile2 img {
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-        }
-        .body #completeReg input {
-            outline: none;
-            width: 350px;
-            padding: 4px;
-            margin-left:10px !important;
-            margin-bottom: 20px;
-            border: none;
-            border-bottom: 2px solid #007bff;
-        }
-        #complete{
-            margin-bottom: 20px;
-        }
-        .body #completeReg span {
-            margin-left: 10px !important;
-        }
-        }
-        @media(max-width:375px){
-            .header {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            .header .left {
-                display: none;
-            }
-
-            .header .right {
-                width: 100%;
-                margin-top: 30px;
-            }
-
-            .header .right h2 {
-                width: 100%;
-                font-size: 17px;
-            }
-
-            .header .right i {
-                margin-top: -18px;
-                font-size: 23px;
-            }
-
-            .body .menu {
-                display: none;
-            }
-            .body .menu2 {
-                height: 100vh;
-                width: 100%;
-            }
-            .body .menu2 button{
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
-            .body .menu2 a {
-                font-size: 22px;
-            }
-            .header .right i {
-                display: inherit;
-            }
-            .body .content {
-            width: 100%;
-            height: 100%;
+        .body .content {
+            height: 30vh;
             background-color: transparent;
-            margin-left: -90px;
-            position: absolute;
-            top: 0px;
-            padding: 20px;
+            margin-left: 6%;
+            margin-top: 0px;
+            padding: 30px;
             font-size: 17px;
-            text-align: justify;
         }
-        .body .content .picture {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        .body .content .picture div {
-            width: 250px;
-            height: 250px;
-            margin-right: 0px;
-            margin-bottom: 150px;
-            text-align: right;
-        }
-        .profile {
-            position: absolute;
-            right: -80px;
-            top: 10px;
+        .adjust{
+            margin-top: 100px !important
         }
 
-        .profile2 {
-            position: absolute;
-            right: -50px;
-            top: 40px;
+        .body .content p {
+            text-decoration: underline
         }
 
-        .profile2 img {
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 80%;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 40px;
         }
 
         .body #completeReg span {
-            margin-left: 100px !important;
+            font-weight: bold;
         }
 
         .body #completeReg input {
             outline: none;
-            width: 300px;
+            width: 100%;
             padding: 4px;
-            margin-left: 100px !important;
-            margin-bottom: 20px;
+            margin-right: 43px;
             border: none;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
         }
         #complete{
-            margin-bottom: 20px;
-            margin-left: 130px;
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
         }
         }
         @media(max-width:280px){
             .header {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            color: black;
+            box-shadow: 0px 0px 4px black;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 7000;
+        }
 
-            .header .left {
+
+        .header .left {
                 display: none;
             }
 
@@ -788,7 +2117,8 @@
 
             .header .right h2 {
                 width: 100%;
-                font-size: 12px;
+                font-size: 17px;
+                margin-top: -15px !important;
             }
 
             .header .right i {
@@ -799,86 +2129,174 @@
             .body .menu {
                 display: none;
             }
+
             .body .menu2 {
                 height: 100vh;
                 width: 100%;
             }
-            .body .menu2 button{
+
+            .body .menu2 button {
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
+
             .body .menu2 a {
                 font-size: 22px;
             }
+
             .header .right i {
                 display: inherit;
             }
-            .body .content {
+
+        .body {
             width: 100%;
-            height: 100%;
-            background-color: transparent;
-            margin-left: -90px;
-            position: absolute;
-            top: 50px;
-            padding: 20px;
-            font-size: 17px;
-            text-align: justify;
         }
-        .body .content .picture {
+
+        
+        .left button {
+            /* border-radius: 25px; */
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px black;
+            margin-right: 40px;
+        }
+
+        .btn-dark:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+        }
+
+        .btn-dark a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-dark:hover a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #ffc107 !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .btn-danger a {
+            text-decoration: none;
+            color: white;
+        }
+        #profil{
+            border: 2px solid #ffc107;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: 70px;
+            right: 70px;
+        }
+
+        .btn-danger:hover {
+            background-color: transparent !important;
+            border: 1px solid #007bff !important;
+            color: black !important;
+        }
+
+        .btn-danger:hover a {
+            color: black
+        }
+
+        .right h2 {
+            margin-top: -15px;
+        }
+
+        .body {
             width: 100%;
+            height: 100vh;
+        }
+
+        .body .word{
+            margin-top: 100px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
-        .body .content .picture div {
-            width: 250px;
-            height: 250px;
-            margin-right: 0px;
-            margin-bottom: 150px;
-            text-align: right;
-        }
-        .profile {
-            position: absolute;
-            right: -80px;
-            top: -30px;
+
+        .body .word p{
+           font-size: 23px;
+           margin-top: 40px;
         }
 
-        .profile2 {
-            position: absolute;
-            right: -50px;
-            top: 0px;
+        .body .content {
+            height: 30vh;
+            background-color: transparent;
+            margin-top: 0px;
+            padding: 30px;
+            font-size: 17px;
+        }
+        .adjust{
+            margin-top: 100px !important
         }
 
-        .profile2 img {
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
+        .body .content p {
+            text-decoration: underline
+        }
+
+        .body #completeReg {
+            display: block;
+            background-color: white;
+            width: 80%;
+            box-shadow: 0px 0px 1px black;
+            margin-left: 30px;
         }
 
         .body #completeReg span {
-            margin-left: 100px !important;
+            font-weight: bold;
         }
 
         .body #completeReg input {
             outline: none;
-            width: 200px;
+            width: 100%;
             padding: 4px;
-            margin-left: 100px !important;
-            margin-bottom: 20px;
+            margin-right: 43px;
             border: none;
-            font-size: 14px;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid red;
+            margin-bottom: 30px;
+        }
+      
+        .body #courseReg span {
+            font-weight: bold;
         }
         #complete{
-            margin-bottom: 20px;
-            margin-left: 130px;
-            width: 200px
+           margin-left: 30%;
+        }
+
+        .body #mycourse {
+            margin-bottom: 40px;
+        }
+
+        .body #courseReg input {
+            outline: none;
+            width: 600px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid red;
         }
         }
-       small{
-           margin-top: -70px;
-       }
+
+
     </style>
 </head>
 <body>
@@ -887,13 +2305,17 @@
             <div class="header">
                 <div class="right d-flex">
                     <h2 class="mt-2">Welcome {{auth()->user()->fullname}}</h2>
-                    <i class="fa fa-bars text-primary"></i>
+                    <i class="fa fa-bars text-primary" onclick="handleMenu()"></i>
                 </div>
                 <div class="left">
                     <button class="btn btn-danger"><a href="/user/logout">LOGOUT</a></button>
                 </div>
             </div>
             <div class="body">
+                <div class="menu2" id="menu2" hidden>
+                    <div> <button><a href="/user/logout">Logout</a></button></div>
+
+                </div>
                 <div class="word p-4">
                     <p>We need to setup your account. Therefore, Enter your secret code and click the button buttton</p>
                 </div>
@@ -932,4 +2354,7 @@
     setTimeout(() => {
        document.getElementById('profil').src=`{{url('/storage/${image}')}}`; 
     }, 100);
+    function handleMenu(params) {
+        document.getElementById('menu2').hidden = !document.getElementById('menu2').hidden;
+    } 
 </script>

@@ -22,6 +22,7 @@
             margin: 0px;
             padding: 0px;
         }
+                
 
         .header {
             width: 100%;
@@ -42,9 +43,9 @@
         .bar{
             display: none;
         }
-        .header .right i {
+        /* .header .right i {
             display: none;
-        }
+        } */
 
         .header .right h2 {
             margin-top: 0px;
@@ -156,6 +157,7 @@
             position: fixed;
             top: 84%;
             left: 70%;
+            z-index: 5000;
         }
 
         .alluser button {
@@ -377,7 +379,50 @@
             top: 30px;
         }
 
+        @media(max-width:1280px){
+            .newModal #newcontent {
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+        }
+        }
+        @media(max-width:1024px){
+            .newModal #newcontent {
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+        }
+        }
 
+
+        @media(max-width:915px) {
+            .body .menu {
+                overflow-y: scroll
+            }
+
+            .body .menu button {
+                margin-top: 10px;
+                margin-bottom: 50px;
+            }
+
+            .body #completeReg input {
+                width: 350px;
+
+            }
+            #complete{
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        .header .right h2{
+            margin-top: -15px;
+        }
+        }
         @media(max-width:915px) {
             .body .menu {
                 overflow-y: scroll
@@ -403,8 +448,8 @@
 
         @media(max-width:912px) {
             .header {
-                padding-left: 60px;
-                padding-right: 60px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .header .left {
@@ -412,18 +457,18 @@
             }
 
             .header .right {
-                width: 100%;
+                width: 90% !important;
                 margin-top: 30px;
             }
 
             .header .right h2 {
-                width: 100%;
-                font-size: 23px;
+                width: 90% !important;
+                font-size: 17px;
             }
 
             .header .right i {
                 margin-top: -18px;
-                font-size: 33px;
+                font-size: 23px;
             }
 
             .body .menu {
@@ -432,34 +477,39 @@
 
             .body .menu2 {
                 height: 100vh;
-                width: 350px;
+                width: 100%;
             }
 
             .body .menu2 button {
-                margin-top: 35px;
-                margin-bottom: 35px;
+                margin-top: 15px;
+                margin-bottom: 15px;
             }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
 
             .body .menu2 a {
-                font-size: 28px;
+                font-size: 22px;
             }
 
-            .header .right i {
-                display: inherit;
-            }
+            .bar{
+            display: inherit;
+        }
+
 
             .body .content {
-                width: 100%;
-                height: 100%;
-                background-color: transparent;
-                margin-left: 0px;
-                position: absolute;
-                top: 0px;
-                padding: 20px;
-                font-size: 23px;
-                text-align: justify;
+               /* padding: 0px; */
+               display: flex;
+               flex-wrap: wrap;
+               padding-left: 20px;
+               margin-left: 90px;
             }
-
             .body .content .picture {
                 width: 100%;
                 display: flex;
@@ -475,6 +525,86 @@
                 margin-bottom: 150px;
                 text-align: right;
             }
+
+            .profile {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+
+            .profile2 {
+                position: absolute;
+                right: 50px;
+                top: 40px;
+            }
+
+            .profile2 img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+
+            .body .content input {
+            outline: none;
+            /* padding: 4px; */
+            border: none;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            background-color: transparent
+        }
+
+            #complete {
+                margin-bottom: 20px;
+            }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
+        }
+
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            width: 690px;
+            padding: 4px;
+            margin-right: 60px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
         }
 
         @media(max-width:896px) {
@@ -558,10 +688,10 @@
             }
         }
 
-        @media(max-width:820px) {
+        @media(max-width:768px) {
             .header {
-                padding-left: 60px;
-                padding-right: 60px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .header .left {
@@ -569,40 +699,57 @@
             }
 
             .header .right {
-                width: 100%;
+                width: 90% !important;
                 margin-top: 30px;
             }
 
             .header .right h2 {
-                width: 100%;
-                font-size: 23px;
+                width: 90% !important;
+                font-size: 17px;
             }
 
             .header .right i {
                 margin-top: -18px;
-                font-size: 33px;
+                font-size: 23px;
             }
 
             .body .menu {
                 display: none;
             }
 
-            .header .right i {
-                display: inherit;
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
             }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .bar{
+            display: inherit;
+        }
+
 
             .body .content {
-                width: 100%;
-                height: 100%;
-                background-color: transparent;
-                margin-left: 0px;
-                position: absolute;
-                top: 0px;
-                padding: 20px;
-                font-size: 17px;
-                text-align: justify;
+               /* padding: 0px; */
+               display: block;
+               padding-left: 20px;
             }
-
             .body .content .picture {
                 width: 100%;
                 display: flex;
@@ -619,25 +766,407 @@
                 text-align: right;
             }
 
-            .body #completeReg span {
-                margin-left: 70px;
+            .profile {
+                position: absolute;
+                right: 20px;
+                top: 10px;
             }
 
-            .body #completeReg input {
-                outline: none;
-                width: 600px;
-                padding: 4px;
-                margin-left: 70px;
-                margin-bottom: 20px;
-                border: none;
-                border-bottom: 2px solid #007bff;
+            .profile2 {
+                position: absolute;
+                right: 50px;
+                top: 40px;
             }
+
+            .profile2 img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+
+            .body .content input {
+            outline: none;
+            min-width: 100%;
+            /* padding: 4px; */
+            border: none;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            background-color: transparent
+        }
 
             #complete {
                 margin-bottom: 20px;
             }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
         }
 
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            width: 690px;
+            padding: 4px;
+            margin-right: 60px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
+        }
+        @media(max-width:700px) {
+            .header {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 90% !important;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 90% !important;
+                font-size: 17px;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .bar{
+            display: inherit;
+        }
+
+
+            .body .content {
+               /* padding: 0px; */
+               display: block;
+               padding-left: 20px;
+            }
+            .body .content .picture {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .body .content .picture div {
+                width: 250px;
+                height: 250px;
+                margin-right: 0px;
+                margin-bottom: 150px;
+                text-align: right;
+            }
+
+            .profile {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+
+            .profile2 {
+                position: absolute;
+                right: 50px;
+                top: 40px;
+            }
+
+            .profile2 img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+
+            .body .content input {
+            outline: none;
+            min-width: 100%;
+            /* padding: 4px; */
+            border: none;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            background-color: transparent
+        }
+
+            #complete {
+                margin-bottom: 20px;
+            }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
+        }
+
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            width: 690px;
+            padding: 4px;
+            margin-right: 60px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
+        }
+
+
+        @media(max-width:375px) {
+            .header {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 90% !important;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 90% !important;
+                font-size: 17px;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .bar{
+            display: inherit;
+        }
+
+
+            .body .content {
+               /* padding: 0px; */
+               display: block;
+               padding-left: 20px;
+            }
+            .body .content .picture {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .body .content .picture div {
+                width: 250px;
+                height: 250px;
+                margin-right: 0px;
+                margin-bottom: 150px;
+                text-align: right;
+            }
+
+            .profile {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+
+            .profile2 {
+                position: absolute;
+                right: 50px;
+                top: 40px;
+            }
+
+            .profile2 img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+
+            .body .content input {
+            outline: none;
+            min-width: 100%;
+            /* padding: 4px; */
+            border: none;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            background-color: transparent
+        }
+
+            #complete {
+                margin-bottom: 20px;
+            }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
+        }
+
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            min-width:80%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
+        }
 
 
         @media(max-width:700px) {
@@ -756,54 +1285,6 @@
 
         @media(max-width:540px) {
             .header {
-                padding-left: 60px;
-                padding-right: 60px;
-            }
-
-            .header .left {
-                display: none;
-            }
-
-            .header .right {
-                width: 100%;
-                margin-top: 30px;
-            }
-
-            .header .right h2 {
-                width: 100%;
-                font-size: 23px;
-            }
-
-            .header .right i {
-                margin-top: -18px;
-                font-size: 33px;
-            }
-
-            .body .menu {
-                display: none;
-            }
-
-            .body .menu2 {
-                height: 100vh;
-                width: 350px;
-            }
-
-            .body .menu2 button {
-                margin-top: 17px;
-                margin-bottom: 17px;
-            }
-
-            .body .menu2 a {
-                font-size: 22px;
-            }
-
-            .header .right i {
-                display: inherit;
-            }
-        }
-
-        @media(max-width:414px) {
-            .header {
                 padding-left: 20px;
                 padding-right: 20px;
             }
@@ -813,12 +1294,12 @@
             }
 
             .header .right {
-                width: 100%;
+                width: 90% !important;
                 margin-top: 30px;
             }
 
             .header .right h2 {
-                width: 100%;
+                width: 90% !important;
                 font-size: 17px;
             }
 
@@ -840,19 +1321,29 @@
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
 
             .body .menu2 a {
                 font-size: 22px;
             }
 
-            .header .right i {
-                display: inherit;
-            }
+            .bar{
+            display: inherit;
+        }
 
 
             .body .content {
                /* padding: 0px; */
                display: block;
+               padding-left: 20px;
             }
             .body .content .picture {
                 width: 100%;
@@ -890,7 +1381,7 @@
 
             .body .content input {
             outline: none;
-            width: 320px;
+            min-width: 100%;
             /* padding: 4px; */
             border: none;
             margin-bottom: 20px;
@@ -905,9 +1396,53 @@
             .body .content span {
                 margin-left: 10px !important;
             }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
         }
 
-        @media(max-width:375px) {
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            max-width: 65%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
+        }
+        @media(max-width:414px) {
             .header {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -918,12 +1453,12 @@
             }
 
             .header .right {
-                width: 100%;
+                width: 90% !important;
                 margin-top: 30px;
             }
 
             .header .right h2 {
-                width: 100%;
+                width: 90% !important;
                 font-size: 17px;
             }
 
@@ -945,17 +1480,30 @@
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
 
             .body .menu2 a {
                 font-size: 22px;
             }
 
-            .header .right i {
-                display: inherit;
+            .bar{
+            display: inherit;
+        }
+
+
+            .body .content {
+               /* padding: 0px; */
+               display: block;
+               padding-left: 20px;
             }
-
-            
-
             .body .content .picture {
                 width: 100%;
                 display: flex;
@@ -974,13 +1522,13 @@
 
             .profile {
                 position: absolute;
-                right: -80px;
+                right: 20px;
                 top: 10px;
             }
 
             .profile2 {
                 position: absolute;
-                right: -50px;
+                right: 50px;
                 top: 40px;
             }
 
@@ -990,28 +1538,70 @@
                 border-radius: 100%;
             }
 
-            .body .content span {
-                margin-left: 100px !important;
-            }
-
-            /* .body .content input {
+            .body .content input {
             outline: none;
-            width: 310px;
-            padding: 4px;
-            margin-right: 43px;
+            min-width: 100%;
+            /* padding: 4px; */
             border: none;
             margin-bottom: 20px;
             border-bottom: 2px solid #007bff;
             background-color: transparent
-        } */
+        }
 
             #complete {
                 margin-bottom: 20px;
-                margin-left: 130px;
             }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
         }
 
-        @media(max-width:280px) {
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            min-width: 100%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
+        }
+        @media(max-width:412px) {
             .header {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -1022,13 +1612,13 @@
             }
 
             .header .right {
-                width: 100%;
+                width: 90% !important;
                 margin-top: 30px;
             }
 
             .header .right h2 {
-                width: 100%;
-                font-size: 12px;
+                width: 90% !important;
+                font-size: 17px;
             }
 
             .header .right i {
@@ -1049,48 +1639,447 @@
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
 
             .body .menu2 a {
                 font-size: 22px;
             }
 
-            .header .right i {
-                display: inherit;
-            }
+            .bar{
+            display: inherit;
+        }
+
 
             .body .content {
+               /* padding: 0px; */
+               display: block;
+               padding-left: 20px;
+            }
+            .body .content .picture {
                 width: 100%;
-                height: 100%;
-                background-color: transparent;
-                margin-left: -90px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .body .content .picture div {
+                width: 250px;
+                height: 250px;
+                margin-right: 0px;
+                margin-bottom: 150px;
+                text-align: right;
+            }
+
+            .profile {
                 position: absolute;
-                top: 50px;
-                padding: 20px;
-                font-size: 17px;
-                text-align: justify;
+                right: 20px;
+                top: 10px;
             }
 
-
-            .body #completeReg span {
-                margin-left: 100px !important;
+            .profile2 {
+                position: absolute;
+                right: 50px;
+                top: 40px;
             }
 
-            .body #completeReg input {
-                outline: none;
-                width: 200px;
-                padding: 4px;
-                margin-left: 100px !important;
-                margin-bottom: 20px;
-                border: none;
-                font-size: 14px;
-                border-bottom: 2px solid #007bff;
+            .profile2 img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
             }
+
+            .body .content input {
+            outline: none;
+            min-width: 100%;
+            /* padding: 4px; */
+            border: none;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            background-color: transparent
+        }
 
             #complete {
                 margin-bottom: 20px;
-                margin-left: 130px;
-                width: 200px
             }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
+        }
+
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            width: 300px;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
+        }
+
+        @media(max-width:375px) {
+            .header {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 90% !important;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 90% !important;
+                font-size: 17px;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            overflow-y: scroll;
+            position: relative;
+        }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .bar{
+            display: inherit;
+        }
+
+
+            .body .content {
+               /* padding: 0px; */
+               display: block;
+               padding-left: 20px;
+            }
+            .body .content .picture {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .body .content .picture div {
+                width: 250px;
+                height: 250px;
+                margin-right: 0px;
+                margin-bottom: 150px;
+                text-align: right;
+            }
+
+            .profile {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+
+            .profile2 {
+                position: absolute;
+                right: 50px;
+                top: 40px;
+            }
+
+            .profile2 img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+
+            .body .content input {
+            outline: none;
+            min-width: 100%;
+            /* padding: 4px; */
+            border: none;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            background-color: transparent
+        }
+
+            #complete {
+                margin-bottom: 20px;
+            }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 50px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
+        }
+
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: -20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            min-width:80%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
+        }
+
+
+        @media(max-width:280px) {
+            .header {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .header .left {
+                display: none;
+            }
+
+            .header .right {
+                width: 90% !important;
+                margin-top: 30px;
+            }
+
+            .header .right h2 {
+                width: 90% !important;
+                font-size: 17px;
+            }
+
+            .header .right i {
+                margin-top: -18px;
+                font-size: 23px;
+            }
+
+            .body .menu {
+                display: none;
+            }
+
+            .body .menu2 {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .body .menu2 button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .myModal #content {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 35px;
+            overflow-y: scroll;
+            position: relative;
+        }
+
+            .body .menu2 a {
+                font-size: 22px;
+            }
+
+            .bar{
+            display: inherit;
+        }
+
+
+            .body .content {
+               /* padding: 0px; */
+               display: block;
+               padding-left: 20px;
+            }
+            .body .content .picture {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .body .content .picture div {
+                width: 250px;
+                height: 250px;
+                margin-right: 0px;
+                margin-bottom: 150px;
+                text-align: right;
+            }
+
+            .profile {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+
+            .profile2 {
+                position: absolute;
+                right: 50px;
+                top: 40px;
+            }
+
+            .profile2 img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+
+            .body .content input {
+            outline: none;
+            width: 60%;
+            /* padding: 4px; */
+            border: none;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            background-color: transparent
+        }
+
+            #complete {
+                margin-bottom: 20px;
+            }
+
+            .body .content span {
+                margin-left: 10px !important;
+            }
+            .newModal #newcontent {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 0px 0px 3px black;
+            padding: 10px;
+            position: relative;
+            overflow-y: scroll;
+            top: 0px;
+        }
+
+        #newcontent i {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        #newModal #completeReg {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        #newModal #completeReg div {
+            margin-bottom: 17px;
+        }
+
+        #newModal #completeReg input {
+            outline: none;
+            width:80%;
+            padding: 4px;
+            margin-right: 43px;
+            border: none;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #modalImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+        }
         }
     </style>
 </head>
@@ -1098,11 +2087,11 @@
 <body>
     <main>
         <main>
-            {{-- <div class="alluser" onclick="handleUser()">
+            <div class="alluser" onclick="handleUser()">
                 <button class="text-center">
                     <i class="fa fa-user text-warning"></i>
                 </button>
-            </div> --}}
+            </div>
             <div class="header">
                 <div class="myModal" id="myModal" hidden>
                     <div id="content">
